@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Every one's List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e7f2cfd51a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <main>
+        <section class="section"><!--뒷배경-->
+          <section class="days"> <!--캘린더 섹션-->
+            <h3><i class="fa-regular fa-calendar"></i>  현재 시각</h3>
+            <div id="calendar">0000년 00월 00일</div>
+            <div id="clock">00:00:00</div>
+            <!--검색창 섹션-->
+            <div class="searchbar">
+              <h5>네이버 검색창</h5>
+              <input class = "keyword" type="text" name = "search" value = "" autocomplete="off" autofocus="on">
+              <button class = "img-btn" type="submit" name="click" value="">
+              <i class="fa-brands fa-searchengin"></i>
+              </button>
+            </div>
+            <!--검색창 끝-->
+
+            <section class = "login-form">
+              <h3>로그 인</h3>
+              <form id="loginform" class="hidden" class="Login">
+                <input required class = "name" maxlength="10" type="text" placeholder="이름을 입력해주세요"/>
+                <input class= "Button" type="submit" value="확인"/>
+            </form>
+                <h1 id="name" class="hidden"></h1>
+            </section>
+          </section>
+          <!--캘린더 끝-->
+
+          <!--날씨 이미지-->
+            <div class="container">
+                <h1>실시간 날씨</h1>
+                <span class="weatherInfo"></span>
+                <img class="weatherIcon">
+            </div>
+            <!--날씨 끝-->
+
+            <!--명언 모음-->
+            <div class="quotes">
+              <span></span>
+              <br/>
+              <span></span>
+            </div>
+            <!--명언 끝-->
+
+            <!--todo리스트-->
+            <section class = todoform>
+              <form ID="todo-form">
+                <input type="text" placeholder="할 일을 적고나서, Enter를 쳐주세요." required/>
+              </form>
+              <ul id="todo-list" class="TODO"></ul>
+            </section>
+            <!--todo리스트-->
+        </section>
+        <!--뒷배경 끝-->
+
+        
+    </main>
+    </body>
+    <script src="js/weather.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/login.js"></script>
+</html>
